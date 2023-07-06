@@ -14,6 +14,11 @@ in -- operation text area -- ->
 -- click Run button --
 
 Check in -- Response  text area--- to view results
+---------------------
+
+Check too http://localhost:3000/ Then view 'Welcome to my API'
+Check too http://localhost:3000/private Then view 'Not found page'
+
 
 
 

@@ -7,6 +7,11 @@ const {resolvers} = require('./resolvers');
 
 const app = express();
 
+app.get('/', (req, res) => res.send('Welcome to my api') );
+
+
+app.use('/private', (req, res) => res.status(404).send('Not found Page') );
+
 module.exports = app;
 
 async function start() {
