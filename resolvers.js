@@ -22,6 +22,19 @@ const resolvers = {
             console.log(newTask);
 
             return newTask;
+        },
+        async deleteTask(_, {id}){
+            await Task.findByIdAndDelete(id);
+            return "Task deleted";
+        },
+        async updateTask(_, {task, id}){
+            const taskUpdated = await Task.findByIdAndUpdate(id, task, {
+                $set: task
+            },
+            {new:true});
+
+            console.log(taskUpdated, id);
+            return taskUpdated
         }
     }
 }
