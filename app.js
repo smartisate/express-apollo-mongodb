@@ -4,8 +4,10 @@ const {ApolloServer} = require('apollo-server-express');
 const {typeDefs} = require('./typeDefs');
 const {resolvers} = require('./resolvers');
 
+const {connectDB} = require('./db');
 
 const app = express();
+connectDB();
 
 app.get('/', (req, res) => res.send('Welcome to my api') );
 

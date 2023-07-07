@@ -20,6 +20,8 @@ Check too http://localhost:3000/ Then view 'Welcome to my API'
 Check too http://localhost:3000/private Then view 'Not found page'
 
 
-
-
+---------GRAPHQL---------
+Queries -> queries
+Mutations -> update, delete, insert
+Types ->
 
