@@ -6,6 +6,10 @@ const resolvers = {
         getAllTasks: async () => {
             const tasks = await Task.find();
             return tasks
+        },
+        getTask: async (_, args) => {
+            const task = await Task.findById(args.id);
+            return task;
         }
     },
     Mutation: {
