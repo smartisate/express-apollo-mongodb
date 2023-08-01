@@ -1,5 +1,9 @@
+https://www.youtube.com/watch?v=fIZxZk_szWw
+
 npm init -y
 npm i express apollo-server-express dotenv graphql mongoose
+npm i nodemon
+
 node index.js
 
 ---------------------
